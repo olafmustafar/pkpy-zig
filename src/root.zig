@@ -1,5 +1,5 @@
 const std = @import("std");
-const c = @import("pkpy_c");
+const c = @import("pocketpy_c");
 
 const Self = @This();
 

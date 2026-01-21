@@ -22,7 +22,7 @@ pub fn build(b: *std.Build) void {
 
     translate_c.addIncludePath(b.path("3rd/pocketpy"));
     const c = translate_c.createModule();
-    mod.addImport("pkpy_c", c);
+    mod.addImport("pocketpy_c", c);
 
     mod.addCSourceFiles(.{
         .files = &.{"3rd/pocketpy/pocketpy.c"},
